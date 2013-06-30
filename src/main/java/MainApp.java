@@ -19,7 +19,6 @@ public class MainApp {
     private static StatefulKnowledgeSession getStatefulKnowledgeSession() {
         if (kbase == null) {
             setupKbase();
-            System.out.println("yes");
         }
         return kbase.newStatefulKnowledgeSession();
     }
